@@ -1,0 +1,7 @@
+grpc:
+  port: 9005
+  enableReflection: true
+  shutdownGrace: 30
+
+server:
+  port: 8005
