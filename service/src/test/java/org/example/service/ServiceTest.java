@@ -9,7 +9,6 @@ import org.example.common.proto.v1.HelloReply;
 import org.example.common.proto.v1.HelloRequest;
 import org.example.common.proto.v1.GreetServiceGrpc;
 import org.example.service.config.TestGrpcSecurityConfig;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.lognet.springboot.grpc.security.AuthClientInterceptor;
 import org.lognet.springboot.grpc.security.AuthHeader;
