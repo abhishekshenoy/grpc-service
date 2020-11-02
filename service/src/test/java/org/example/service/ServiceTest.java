@@ -44,7 +44,6 @@ public class ServiceTest {
   }
 
   @Test
-  @Disabled
   public void nonSecureServiceWithAuthenticatedButNonAuthorizedUser(){
     AuthClientInterceptor clientInterceptor = new AuthClientInterceptor(AuthHeader.builder().basic("anuj","".getBytes()));
     GreetServiceGrpc.GreetServiceBlockingStub stub=GreetServiceGrpc.newBlockingStub(InProcessChannelBuilder.forName("ServiceTest").usePlaintext().intercept(clientInterceptor).build());
